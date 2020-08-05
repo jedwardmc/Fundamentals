@@ -3,11 +3,11 @@ import java.text.*;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 
-public class Week12{
+public class LanguageReader {
     
     public static void main(String []args){
 
-        String f = readUnicodeFile("FrenchTextFile.txt");
+        String f = readUnicodeFile("FrenchTextFile.txt"); // note; change this to a file in French
         ArrayList<String> words = extractWords(f, Locale.FRENCH);
         outputWordsToFile("Modified.txt", words);
         
